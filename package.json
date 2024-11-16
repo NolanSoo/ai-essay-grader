@@ -1,0 +1,6 @@
+{
+"dependencies": {
+    "regression": "2.0.1",
+    "mathjs": "13.2.0"
+  },
+}
