@@ -4983,7 +4983,7 @@ async function run() {
   let mainGradeEpoch = 0;
   let lastAccuracy = 0;
 
-  while (mainGradeEpoch < 10000) {
+  while (mainGradeEpoch < 7500) {
     mainGradeEpoch += 1;
 
     await mainGradeModel.fit(
@@ -5125,7 +5125,7 @@ async function run() {
 
   // Train the model with subgrade training data
   let subgradeEpoch = 0;
-  while (subgradeEpoch < 8000) {
+  while (subgradeEpoch < 5000) {
     subgradeEpoch += 1;
     await subgradeModel.fit(
       subgradeInputTrainTensor,
