@@ -294,11 +294,10 @@
         document.getElementById("predict_section").style.display = "block";
       }
 
-      // Sample event listener for predicting the grade
       document
-        .getElementById("predict_button")
-        .addEventListener("click", predictGrade);
-
+  .getElementById("predict_grade")
+  .addEventListener("click", predictGrade);
+// i know this is worst syntax of all time :(
       function edit_row(no) {
         document.getElementById("edit_button" + no).style.display = "none";
 
