@@ -5039,7 +5039,7 @@ async function run() {
     if (mainGradeEpoch % 10 === 0) {
       console.log(`Main Grade Training Epoch ${mainGradeEpoch} completed.`);
     }
-    percentageDone += 0.01;
+    percentageDone += 0.01333333;
     currentTime = Date.now() / 1000;
     totalTimeTaken = currentTime - startTime;
     updateProgress(percentageDone, totalTimeTaken);
@@ -5175,7 +5175,7 @@ async function run() {
     }
 
 
-    percentageDone += 0.0125;
+    percentageDone += 0.02;
     totalTimeTaken = currentTime - startTime;
     updateProgress(percentageDone, totalTimeTaken);
   }
