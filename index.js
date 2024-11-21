@@ -5079,7 +5079,7 @@ async function run() {
   ).innerText += ` | Main Grade Prediction Accuracy: ${mainGradeAccuracy.toFixed(
     2
   )}%`;
-
+	 var startTime = Date.now() / 1000; // reset start time - I know it indented 
   // Prepare to collect subgrade input values for prediction
   const subgradeInputEssays = []; // Initialize an array to gather essays
   const subgradeTargets = []; // Initialize an array to gather target values
@@ -5175,7 +5175,8 @@ async function run() {
     }
 
 
-    percentageDone += 0.02;
+       percentageDone += 0.02;
+    currentTime = Date.now() / 1000;
     totalTimeTaken = currentTime - startTime;
     updateProgress(percentageDone, totalTimeTaken);
   }
