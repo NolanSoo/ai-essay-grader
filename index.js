@@ -3962,7 +3962,7 @@ async function run() {
   let mainGradeEpoch = 0;
   let lastAccuracy = 0;
 
-  while (mainGradeEpoch < 10000) {
+  while (mainGradeEpoch < 7500) {
     mainGradeEpoch += 1;
 
     await mainGradeModel.fit(
@@ -4018,7 +4018,7 @@ async function run() {
     if (mainGradeEpoch % 10 === 0) {
       console.log(`Main Grade Training Epoch ${mainGradeEpoch} completed.`);
     }
-    percentageDone += 0.01;
+    percentageDone += 0.0133333;
     currentTime = Date.now() / 1000;
     totalTimeTaken = currentTime - startTime;
     updateProgress(percentageDone, totalTimeTaken);
@@ -4104,7 +4104,7 @@ async function run() {
 
   // Train the model with subgrade training data
   let subgradeEpoch = 0;
-  while (subgradeEpoch < 8000) {
+  while (subgradeEpoch < 5000) {
     subgradeEpoch += 1;
     await subgradeModel.fit(
       subgradeInputTrainTensor,
@@ -4153,7 +4153,7 @@ async function run() {
       learningRate2 *= 0.999;
     }
 
-    percentageDone += 0.0125;
+    percentageDone += 0.02;
     totalTimeTaken = currentTime - startTime;
     updateProgress(percentageDone, totalTimeTaken);
   }
