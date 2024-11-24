@@ -54,8 +54,8 @@
         </tr>
 
         <tr id="row1">
-          <td id="name_row1">essay</td>
-          <td id="country_row1">88</td>
+          <td id="essay_row1">This is a terrblie essay</td>
+          <td id="grade_row1">1</td>
           <td>
             <input
               type="button"
@@ -67,8 +67,8 @@
         </tr>
 
         <tr id="row2">
-          <td id="name_row2">essay</td>
-          <td id="country_row2">92</td>
+          <td id="essay_row2">This is an excellent essay.</td>
+          <td id="grade_row2">4</td>
           <td>
             <input
               type="button"
@@ -302,8 +302,8 @@
       function edit_row(no) {
         document.getElementById("edit_button" + no).style.display = "none";
 
-        var essayCell = document.getElementById("name_row" + no);
-        var gradeCell = document.getElementById("country_row" + no);
+        var essayCell = document.getElementById("essay_row" + no);
+        var gradeCell = document.getElementById("grade_row" + no);
 
         var essayData = essayCell.innerHTML;
         var gradeData = gradeCell.innerHTML;
